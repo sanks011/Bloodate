@@ -25,7 +25,7 @@ then inside that bl0od_db   just click on insert and insert/import the provided 
 
 ******if it doesnt work you need to create a table with 12 column in blood_db named donor_db...
 
-10 columns would be -   ID(set it AI as primary) (int) limit try to give 10,//        NOW FROM GIVE LIMIT MORE THAN 80,  now all (VARCHAR)---  NAME, CONTACT, DOB, HOS_NO, CITY, BLOOD_GROUP, GENDER, PASSWORD, EMAIL, SAVE_LIFE_DATE, REDIRECT_URL*********
+10 columns would be -   ID(set it AI ) (int) limit try to give 10,//        NOW FROM GIVE LIMIT MORE THAN 80,  now all (VARCHAR)---  NAME, CONTACT, DOB, HOS_NO, CITY, BLOOD_GROUP, GENDER, PASSWORD, EMAIL, SAVE_LIFE_DATE, REDIRECT_URL*********
 
 
 NOW IT SHOULD WORK! 
