@@ -160,10 +160,64 @@ if (isset($_POST['submit'])) {
 			</div>';
 	}
 
-	if (isset($name) && isset($blood_group) && isset($gender) && isset($blood_group) && isset($day) && isset($month) && isset($year) && isset($email) && isset($contact) && isset($city) && isset($password)) {
+	if(isset($city)=="ILS Hospital")
+	{
+		$hosno="03340880000";
+		$url="https://www.google.com/maps/dir/0/ILS+Hospitals,+Howrah,+Doctor+Abani+Dutta+Road,+opposite+Golabari,+PS,+Howrah,+West+Bengal/@22.592966,88.3033317,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3a0277c1f2f67309:0x2d4ba68221440468!2m2!1d88.3445316!2d22.592892!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="Chakdah General Hospital")
+	{
+		$hosno="9925526889";
+		$url="https://www.google.com/maps/dir//3GFG%2B7GR+Chakdaha+State+General+Hospital,+Locality:,+Rabindranagar,+Rajbagan,+Chakdaha,+West+Bengal+741222/@23.073233,88.523696,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x39f8c17195aaaaab:0x26238a122339a6f4!2m2!1d88.5262709!2d23.0732281!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="Calcutta Medical Research Institute")
+	{
+		$hosno="03322551614";
+		$url="https://www.google.com/maps/dir//The+Calcutta+Medical+Research+Institute,+Diamond+Harbour+Road,+New+Alipore,+Kolkata,+West+Bengal/@22.5322438,88.2866025,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3a0277596a6eacc7:0xbf6e76f5b5566257!2m2!1d88.3278024!2d22.5321698!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="BN Bose Hospital")
+	{
+		$hosno="03325923676";
+		$url="https://www.google.com/maps/dir//Dr.+B.N+Basu,+Barrackpore+Trunk+Rd,+Cantonment,+Barrackpore,+West+Bengal+700120/@22.7405883,88.3756594,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x39f89bada8273b8d:0x10e221c0fcace736!2m2!1d88.37052!2d22.7514!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="City Hospital")
+	{
+		$hosno="9875472239";
+		$url="https://www.google.com/maps/dir//PGJ2%2B6Q7,+AH1,+Kazipara,+Uttar+Seethi,+Kolkata,+West+Bengal+700124/@22.7301149,88.4192735,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39f8a320183f4f6f:0xa9d385bcb2299909!2m2!1d88.5016751!2d22.730136?entry=ttu";
+	}
+	else if(isset($city)=="Apollo Hospital")
+	{
+		$hosno="03344202122";
+		$url="https://www.google.com/maps/dir//Apollo+Multispeciality+Hospitals,+Kolkata,+58,+Canal+Circular+Rd,+Kadapara,+Phool+Bagan,+Kankurgachi,+Kolkata,+West+Bengal+700054/@22.5747574,88.3990153,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3a0277b5341e8edf:0x620ba314896272e1!2m2!1d88.4015902!2d22.5747525!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="Charu Hospital")
+	{
+		$hosno="03473245333";
+		$url="https://www.google.com/maps/dir//Charu+health+point+nursing+home,+Nikunja+bhavan,+Chakdaha+Bonogram+Rd,+Lalpur,+Chakdaha,+West+Bengal+741222/@23.0766998,88.53169,15.75z/data=!4m9!4m8!1m0!1m5!1m1!1s0x39f8c1577a62e475:0x219589b19665e39e!2m2!1d88.5342492!2d23.0796335!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="GNRC Hospital")
+	{
+		$hosno="8100974444";
+		$url="https://www.google.com/maps/dir//GNRC+Hospitals,+Barasat,+Kolkata,+Kolkata+-+Basirhat+Road,+Koyra,+West+Bengal/@22.7092591,88.4999121,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x39f8a3e1fb51fae3:0xab43e89f50999e8!2m2!1d88.541112!2d22.7091852!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="Narayana Hospital")
+	{
+		$hosno="8067506907";
+		$url="https://www.google.com/maps/dir//Narayana+Hospital,+Barasat,+Jessore+Road,+Barasat,+Kolkata,+West+Bengal/@22.7053488,88.4309734,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x39f8a20931000025:0x3fbae55f12a3238a!2m2!1d88.4721733!2d22.7052749!3e0?authuser=0&entry=ttu";
+	}
+	else if(isset($city)=="BMRC Hospital")
+	{
+		$hosno="03325014947";
+		$url="https://www.google.com/maps/dir//BMRC+Hospital+:+Best+Cardiology+Hospitals+in+Kolkata,+Barrackpore+Trunk+Road,+Talpukur,+Titagarh,+Barrackpore,+West+Bengal/@22.7492131,88.33139,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x39f89bb207741f73:0x216e28c6b6101513!2m2!1d88.3725899!2d22.7491392!3e0?authuser=0&entry=ttu";
+	}
+	else
+	{
+		$url="Not found";
+	}
+	if (isset($name) && isset($blood_group) && isset($gender) && isset($blood_group) && isset($day) && isset($month) && isset($year) && isset($email) && isset($contact) && isset($city) &&isset($hosno) &&isset($url) && isset($password)) {
 		$DonorDOB = $year . "-" . $month . "-" . $day;
 		$password = md5($password);
-		$sql = "INSERT INTO donor_db(NAME,BLOOD_GROUP,GENDER,EMAIL,CITY,DOB,CONTACT,SAVE_LIFE_DATE,PASSWORD) VALUES('$name','$blood_group','$gender','$email','$city','$DonorDOB','$contact','0','$password')";
+		$sql = "INSERT INTO donor_db(NAME,BLOOD_GROUP,GENDER,EMAIL,CITY,HOS_NO,DOB,CONTACT,SAVE_LIFE_DATE,REDIRECT_URL,PASSWORD) VALUES('$name','$blood_group','$gender','$email','$city','$hosno','$DonorDOB','$contact','0','$url','$password')";
 
 		if (mysqli_query($connection, $sql)) {
 			$SubmitSuccess = '<div class="alert alert-success alert-dismissible fade show" role="alert">
